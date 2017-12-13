@@ -25,7 +25,7 @@ def get_from_primary(location):
         return lat_lng
 
 def get_from_secondary(location):
-        lat_lng={} 
+        lat_lng={}
         req = requests.get('http://www.mapquestapi.com/geocoding/v1/address?key=%s&location=%s' %(mapquest_key,location))
         result = req.json()
         lat_lng=result['results'][0]['locations'][0]['latLng']
