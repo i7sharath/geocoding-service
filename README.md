@@ -6,7 +6,7 @@ How to Use :
 
 A - Install the following modules : 
 
-sudo pip install json
+sudo pip install json \n
 sudo pip install requests
 
 B - Compile and run the server at port 3024 (port number can be changed !) 
